@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="api-test" tests="1" time="0.000">
+  <testsuite name="get merchant" id="c1ba4821-c02e-4ae9-ac80-d8844dfe9af9" timestamp="2024-05-03T10:56:18.243Z" tests="1" failures="1" errors="1" time="0.000">
+    <system-err><![CDATA[Iteration: 0
+RequestError: Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1606:16)
+
+---
+]]></system-err>
+    <testcase name="Status code is 200" time="0.000" classname="ApiTest">
+      <failure type="AssertionFailure" message="expected PostmanResponse{ …(5) } to have property 'code'">
+        <![CDATA[Failed 1 times.]]>
+        <![CDATA[Collection JSON ID: 19fd1470-b1c4-4b17-9d40-1f8f0e97eedf.]]>
+        <![CDATA[Collection name: api-test.]]>
+        <![CDATA[Request name: get merchant.]]>
+        <![CDATA[Test description: Status code is 200.]]>
+        <![CDATA[Error message: expected PostmanResponse{ …(5) } to have property 'code'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected PostmanResponse{ …(5) } to have property 'code'
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+  </testsuite>
+</testsuites>

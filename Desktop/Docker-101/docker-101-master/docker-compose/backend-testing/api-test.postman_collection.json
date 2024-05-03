@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "19fd1470-b1c4-4b17-9d40-1f8f0e97eedf",
+		"name": "api-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28179517",
+		"_collection_link": "https://solar-crater-761564.postman.co/workspace/Team-Workspace~0211cd70-46e3-4c05-9714-9662d46080de/collection/28179517-19fd1470-b1c4-4b17-9d40-1f8f0e97eedf?action=share&source=collection_link&creator=28179517"
+	},
+	"item": [
+		{
+			"name": "get merchant",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		}
+	]
+}
